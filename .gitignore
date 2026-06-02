@@ -1,7 +1,6 @@
 # the42ai
 
 tailwindcss
-static/css/style.css
 public/
 resources/
 .hugo_build.lock
