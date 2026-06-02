@@ -1,0 +1,31 @@
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 fade-in">
+      <div>
+        <p class="text-sm font-semibold text-teal-400 tracking-[0.24em] uppercase mb-4">Our Solutions</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          End-to-end AI,<br>from strategy to <span class="gradient-text">scale</span>.
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl">
+          Every engagement spans the full arc — from opportunity identification to production systems that hold.
+        </p>
+      </div>
+      <a href="/solutions/" class="mt-6 md:mt-0 text-indigo-500 hover:text-indigo-400 font-medium text-sm transition-colors">
+        View all solutions →
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range $index, $service := hugo.Data.services }}
+      <div class="card-gradient-border fade-in group">
+        <div class="service-marker mb-5">{{ printf "%02d" (add $index 1) }}</div>
+        <h3 class="font-display text-lg font-semibold mb-2 group-hover:text-indigo-400 transition-colors">{{ $service.title }}</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">{{ $service.description }}</p>
+        <a href="{{ $service.link }}" class="inline-block mt-4 text-indigo-500 hover:text-indigo-400 text-sm font-medium transition-colors">
+          Learn more →
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

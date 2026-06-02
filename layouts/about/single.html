@@ -1,0 +1,85 @@
+{{ define "main" }}
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Hero -->
+    <div class="max-w-3xl mb-20 fade-in">
+      <p class="text-sm font-medium text-indigo-500 tracking-wider uppercase mb-4">About Us</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+        The answer to your hardest questions is <span class="gradient-text">42</span>.
+      </h1>
+      <p class="text-slate-400 text-xl leading-relaxed">
+        In Douglas Adams' universe, 42 is the answer to the ultimate question of life, the universe, and everything. At the42ai, we believe the ultimate answer for business isn't pure AI or pure human — it's both, working together.
+      </p>
+    </div>
+
+    <!-- Story -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24 fade-in">
+      <div>
+        <h2 class="font-display text-2xl font-bold mb-4">Our Philosophy</h2>
+        <p class="text-slate-400 leading-relaxed mb-4">
+          We founded the42ai with a conviction: the most powerful AI systems are those designed with humans at the center. Not as an afterthought. Not as a fallback. As a fundamental design principle.
+        </p>
+        <p class="text-slate-400 leading-relaxed">
+          Every solution we build embodies this duality — machine precision amplified by human wisdom. That's what makes our work not just technically excellent, but genuinely transformative for the people who use it every day.
+        </p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold mb-4">What Drives Us</h2>
+        <ul class="space-y-4">
+          <li class="flex gap-3">
+            <span class="gradient-text font-bold">01</span>
+            <div>
+              <p class="font-semibold text-slate-200">Impact over complexity</p>
+              <p class="text-slate-400 text-sm">The simplest solution that solves the problem wins.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="gradient-text font-bold">02</span>
+            <div>
+              <p class="font-semibold text-slate-200">Humans in the loop</p>
+              <p class="text-slate-400 text-sm">AI augments people — it never replaces judgment.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="gradient-text font-bold">03</span>
+            <div>
+              <p class="font-semibold text-slate-200">Production or nothing</p>
+              <p class="text-slate-400 text-sm">We don't build demos. We build systems that run in the real world.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="gradient-text font-bold">04</span>
+            <div>
+              <p class="font-semibold text-slate-200">Radical transparency</p>
+              <p class="text-slate-400 text-sm">You'll always know how our AI works, why it works, and when it doesn't.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="fade-in">
+      <h2 class="font-display text-3xl font-bold tracking-tight mb-12">
+        Our <span class="gradient-text">people</span>.
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{ range hugo.Data.team }}
+        <div class="card-gradient-border text-center">
+          <div class="w-20 h-20 rounded-full bg-navy-800 mx-auto mb-4 flex items-center justify-center">
+            <span class="text-2xl">👤</span>
+          </div>
+          <h3 class="font-display font-semibold text-lg">{{ .name }}</h3>
+          <p class="text-indigo-500 text-sm font-medium mb-3">{{ .role }}</p>
+          <p class="text-slate-400 text-sm leading-relaxed">{{ .bio }}</p>
+          {{ with .linkedin }}
+          <a href="{{ . }}" class="inline-block mt-3 text-slate-400 hover:text-slate-50 text-sm transition-colors" target="_blank" rel="noopener">LinkedIn →</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- partial "cta.html" . -}}
+{{ end }}

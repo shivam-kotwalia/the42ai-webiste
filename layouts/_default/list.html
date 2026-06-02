@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Hero -->
+    <div class="max-w-3xl mb-16 fade-in">
+      <p class="text-sm font-medium text-indigo-500 tracking-wider uppercase mb-4">Insights</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+        Perspectives on <span class="gradient-text">intelligent enterprise</span>.
+      </h1>
+      <p class="text-slate-400 text-xl leading-relaxed">
+        Thoughts on AI strategy, automation, and building systems where humans and machines thrive together.
+      </p>
+    </div>
+
+    <!-- Articles List -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range .Pages }}
+      <article class="card-gradient-border fade-in group">
+        <time class="text-xs text-slate-400">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <h3 class="font-display text-lg font-semibold mt-2 mb-2 group-hover:text-indigo-400 transition-colors">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h3>
+        <p class="text-slate-400 text-sm leading-relaxed">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="inline-block mt-4 text-indigo-500 hover:text-indigo-400 text-sm font-medium transition-colors">
+          Read →
+        </a>
+      </article>
+      {{ else }}
+      <!-- Coming soon state -->
+      <div class="md:col-span-3 text-center py-16 fade-in">
+        <p class="text-slate-400 text-lg">Insights coming soon. Stay tuned.</p>
+        <a href="/contact/" class="inline-block mt-4 text-indigo-500 hover:text-indigo-400 font-medium transition-colors">
+          Subscribe to updates →
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body class="bg-navy-950 text-slate-50 font-sans antialiased">
+  {{- partial "nav.html" . -}}
+  <main>
+    {{- block "main" . }}{{ end -}}
+  </main>
+  {{- partial "footer.html" . -}}
+  <script>
+    // Scroll fade-in observer
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+      });
+    }
+  </script>
+</body>
+</html>

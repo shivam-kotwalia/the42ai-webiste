@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 44" fill="none" role="img" aria-label="The Wonderful Company">
+  <!-- Pomegranate / circle mark -->
+  <circle cx="20" cy="22" r="14" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <circle cx="20" cy="22" r="7"  fill="currentColor" opacity="0.55"/>
+  <line x1="20" y1="8" x2="20" y2="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="20" y1="2" x2="25" y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="42" y="20" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="700" fill="currentColor" letter-spacing="1">THE WONDERFUL</text>
+  <text x="42" y="36" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" fill="currentColor" letter-spacing="1">COMPANY</text>
+</svg>

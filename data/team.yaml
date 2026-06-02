@@ -1,0 +1,17 @@
+- name: "Shivam Kotwalia"
+  role: "Founder & CEO"
+  bio: "AI strategist with a decade of experience building intelligent systems for enterprises."
+  linkedin: "https://linkedin.com/in/"
+  photo: "/images/team-placeholder.svg"
+
+- name: "Team Member"
+  role: "Head of Engineering"
+  bio: "Engineering leader specializing in scalable AI infrastructure and MLOps."
+  linkedin: "https://linkedin.com/in/"
+  photo: "/images/team-placeholder.svg"
+
+- name: "Team Member"
+  role: "Head of Data Science"
+  bio: "Data scientist with expertise in NLP, computer vision, and predictive analytics."
+  linkedin: "https://linkedin.com/in/"
+  photo: "/images/team-placeholder.svg"

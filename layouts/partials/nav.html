@@ -1,0 +1,45 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-navy-950/90 backdrop-blur-md border-b border-navy-800/50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 grid grid-cols-[auto_1fr_auto] items-center gap-8">
+    <!-- Logo -->
+    <a href="/" class="font-display text-2xl font-bold tracking-tight">
+      <span class="logo-animated-text">the42ai</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center justify-center gap-10">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}" class="text-slate-400 hover:text-slate-50 transition-colors text-sm font-medium">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+
+    <!-- CTA Button (desktop) -->
+    <a href="/contact/" class="hidden md:inline-block btn-gradient text-sm py-2.5 px-5 whitespace-nowrap">
+      Get in Touch
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button id="nav-toggle" class="md:hidden text-slate-50 focus:outline-none justify-self-end" aria-label="Toggle menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="nav-menu" class="hidden flex-col md:hidden bg-navy-900 border-t border-navy-800 px-6 py-4 gap-4">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" class="text-slate-400 hover:text-slate-50 transition-colors text-sm font-medium py-2">
+      {{ .Name }}
+    </a>
+    {{ end }}
+    <a href="/contact/" class="btn-gradient text-sm py-2.5 px-5 text-center mt-2">
+      Get in Touch
+    </a>
+  </div>
+</header>
+<!-- Spacer for fixed nav -->
+<div class="h-[72px]"></div>

@@ -1,0 +1,96 @@
+{{ define "main" }}
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Hero -->
+    <div class="max-w-3xl mb-16 fade-in">
+      <p class="text-sm font-medium text-indigo-500 tracking-wider uppercase mb-4">Our Work</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+        Real results. <span class="gradient-text">Real impact</span>.
+      </h1>
+      <p class="text-slate-400 text-xl leading-relaxed">
+        We measure success by what changes — faster decisions, reduced costs, new capabilities, and teams empowered by AI.
+      </p>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Case Study 1 -->
+      <div class="card-gradient-border fade-in">
+        <span class="text-xs text-indigo-500 font-medium uppercase tracking-wider">Logistics</span>
+        <h3 class="font-display text-xl font-semibold mt-3 mb-3">Route Optimization with Human-AI Collaboration</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Designed an AI-powered route optimization system for a logistics company that kept dispatchers in control while automating 80% of routine decisions.
+        </p>
+        <div class="flex gap-6">
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">3.4x</div>
+            <div class="text-slate-400 text-xs">Efficiency gain</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">90 days</div>
+            <div class="text-slate-400 text-xs">To production</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="card-gradient-border fade-in">
+        <span class="text-xs text-indigo-500 font-medium uppercase tracking-wider">Financial Services</span>
+        <h3 class="font-display text-xl font-semibold mt-3 mb-3">Intelligent Document Processing Pipeline</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Built a multi-modal AI pipeline that extracts, classifies, and validates financial documents — with human review for edge cases.
+        </p>
+        <div class="flex gap-6">
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">92%</div>
+            <div class="text-slate-400 text-xs">Accuracy rate</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">60%</div>
+            <div class="text-slate-400 text-xs">Cost reduction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 -->
+      <div class="card-gradient-border fade-in">
+        <span class="text-xs text-indigo-500 font-medium uppercase tracking-wider">Healthcare</span>
+        <h3 class="font-display text-xl font-semibold mt-3 mb-3">Predictive Patient Flow Management</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Deployed ML models to predict patient admission patterns, enabling proactive staffing decisions and reducing wait times.
+        </p>
+        <div class="flex gap-6">
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">40%</div>
+            <div class="text-slate-400 text-xs">Reduced wait times</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">$2.1M</div>
+            <div class="text-slate-400 text-xs">Annual savings</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 4 -->
+      <div class="card-gradient-border fade-in">
+        <span class="text-xs text-indigo-500 font-medium uppercase tracking-wider">Retail</span>
+        <h3 class="font-display text-xl font-semibold mt-3 mb-3">AI-Powered Demand Forecasting</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Implemented a demand forecasting system combining ML predictions with merchandiser expertise for inventory optimization.
+        </p>
+        <div class="flex gap-6">
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">25%</div>
+            <div class="text-slate-400 text-xs">Less overstock</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold gradient-text">18%</div>
+            <div class="text-slate-400 text-xs">Revenue uplift</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{- partial "cta.html" . -}}
+{{ end }}

@@ -1,0 +1,47 @@
+- id: strategy
+  index: "01"
+  title: "AI Strategy & Advisory"
+  description: "We assess your AI readiness, identify high-impact opportunities, and build a roadmap that aligns AI initiatives with measurable business outcomes."
+  capabilities:
+    - "AI readiness assessment"
+    - "Opportunity mapping"
+    - "Roadmap design"
+    - "Board-level narrative"
+    - "Build vs. buy analysis"
+  link: "/solutions/#strategy"
+
+- id: automation
+  index: "02"
+  title: "Intelligent Automation"
+  description: "From process mining to agentic workflows, we design and deploy automation that combines AI precision with the human judgment that keeps it trustworthy."
+  capabilities:
+    - "Process mining"
+    - "Agentic workflows"
+    - "RPA + AI integration"
+    - "Human-in-the-loop design"
+    - "Governance frameworks"
+  link: "/solutions/#automation"
+
+- id: engineering
+  index: "03"
+  title: "Data & AI Engineering"
+  description: "We build the data foundations, model pipelines, and ML infrastructure that convert raw data into a durable competitive advantage."
+  capabilities:
+    - "Data architecture"
+    - "Feature engineering"
+    - "MLOps & model lifecycle"
+    - "Real-time pipelines"
+    - "LLM infrastructure"
+  link: "/solutions/#engineering"
+
+- id: custom
+  index: "04"
+  title: "Custom AI Solutions"
+  description: "Purpose-built AI products designed from first principles — computer vision, NLP engines, predictive platforms — engineered for your specific operational context."
+  capabilities:
+    - "Computer vision systems"
+    - "NLP & LLM products"
+    - "Predictive modelling"
+    - "Recommendation engines"
+    - "AI product strategy"
+  link: "/solutions/#custom"

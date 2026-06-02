@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none" role="img" aria-label="Walmart">
+  <!-- Spark symbol -->
+  <g transform="translate(0,4)">
+    <line x1="16" y1="0"  x2="16" y2="8"  stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="16" y1="24" x2="16" y2="32" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="0"  y1="16" x2="8"  y2="16" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="24" y1="16" x2="32" y2="16" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="4.7" y1="4.7"   x2="10.3" y2="10.3" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="21.7" y1="21.7" x2="27.3" y2="27.3" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="27.3" y1="4.7"  x2="21.7" y2="10.3" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="10.3" y1="21.7" x2="4.7"  y2="27.3" stroke="#FFC220" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <text x="42" y="29" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="currentColor" letter-spacing="-0.3">walmart</text>
+</svg>
