@@ -86,7 +86,7 @@
         <a href="/experience/" class="btn-gradient inline-block">View our work &rarr;</a>
       </div>
       <div class="solutions-work-stats">
-        {{ range hugo.Data.stats }}
+        {{ range .Site.Data.solutions }}
         <div class="solutions-work-stat">
           <div class="font-display text-4xl font-bold gradient-text">{{ .value }}</div>
           <div class="text-slate-400 text-sm mt-1">{{ .label }}</div>
