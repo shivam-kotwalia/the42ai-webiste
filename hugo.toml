@@ -1,4 +1,5 @@
-baseURL = 'https://github.io'
+baseURL = 'https://shivam-kotwalia.github.io/the42ai-webiste/'
+canonifyURLs = true
 
 locale = "en-us"
 title = "the42ai — AI Consulting for the Intelligent Enterprise"
