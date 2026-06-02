@@ -1,4 +1,5 @@
-baseURL = "https://the42ai.com/"
+baseURL = 'https://github.io'
+
 locale = "en-us"
 title = "the42ai — AI Consulting for the Intelligent Enterprise"
 
@@ -6,7 +7,7 @@ title = "the42ai — AI Consulting for the Intelligent Enterprise"
   description = "Intelligent automation. Human intuition. The answer is 42."
   tagline = "AI consulting that combines machine intelligence with human wisdom to drive real business outcomes."
   email = "hello@the42ai.com"
-  phone = "+1 (555) 042-4242"
+  phone = "+91-8058615335"
 
 [menus]
   [[menus.main]]
